@@ -7,6 +7,7 @@ Página inicial : o usuário é bem-vindo e pode ver quantas notificações não
 Configurações : o usuário pode fazer logout e atualizar o número de notificações não lidas (o que produz um número aleatório de notificações).
 O projeto segue um padrão MVVM, onde toda a complexidade da View é transferida para um ViewModel.
 
+<img width="873" alt="Screen Shot 2021-08-10 at 08 19 27" src="https://user-images.githubusercontent.com/49947803/128859049-49731ff9-77cb-4154-b61a-20eea873166c.png">
 
 Também uso o Dagger para realizar injeção de campo
 
