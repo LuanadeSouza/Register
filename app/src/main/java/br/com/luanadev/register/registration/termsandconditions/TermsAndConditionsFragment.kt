@@ -5,11 +5,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import androidx.fragment.app.Fragment
-import br.com.luanadev.register.R
+import br.com.luanadev.register.databinding.FragmentTermsAndConditionsBinding
 import br.com.luanadev.register.registration.RegistrationActivity
 import br.com.luanadev.register.registration.RegistrationViewModel
+import by.kirich1409.viewbindingdelegate.viewBinding
 import javax.inject.Inject
 
 class TermsAndConditionsFragment : Fragment() {
@@ -17,6 +17,9 @@ class TermsAndConditionsFragment : Fragment() {
     // @Inject annotated fields will be provided by Dagger
     @Inject
     lateinit var registrationViewModel: RegistrationViewModel
+    private val binding by viewBinding {
+        FragmentTermsAndConditionsBinding.inflate(layoutInflater)
+    }
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -29,14 +32,14 @@ class TermsAndConditionsFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        val view = inflater.inflate(R.layout.fragment_terms_and_conditions, container, false)
+    ) = binding.root
 
-        view.findViewById<Button>(R.id.next).setOnClickListener {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.next.setOnClickListener {
             registrationViewModel.acceptTCs()
             (activity as RegistrationActivity).onTermsAndConditionsAccepted()
         }
-
-        return view
     }
 }
