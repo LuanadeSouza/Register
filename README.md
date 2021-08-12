@@ -20,3 +20,5 @@ Se o aplicativo ficar maior, começaremos a escrever muitos códigos clichê (po
 pode levar a erros sutis e vazamentos de memória.
 
 Dagger se encarregará de criar o gráfico do aplicativo, automatizando esse processo e gerando o mesmo código que teria escrito à mão de outra forma.
+
+<img width="300" alt="register (2)" src="https://user-images.githubusercontent.com/49947803/129240183-37917806-9eb9-4911-a78a-8cefd30438e5.gif">
