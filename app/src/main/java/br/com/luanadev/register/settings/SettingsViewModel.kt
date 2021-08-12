@@ -1,7 +1,7 @@
 package br.com.luanadev.register.settings
 
-import android.os.UserManager
 import br.com.luanadev.register.user.UserDataRepository
+import br.com.luanadev.register.user.UserManager
 import javax.inject.Inject
 
 class SettingsViewModel @Inject constructor(

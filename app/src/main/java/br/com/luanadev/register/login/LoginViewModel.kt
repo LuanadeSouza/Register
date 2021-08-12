@@ -1,8 +1,8 @@
 package br.com.luanadev.register.login
 
-import android.os.UserManager
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import br.com.luanadev.register.user.UserManager
 import javax.inject.Inject
 
 class LoginViewModel @Inject constructor(private val userManager: UserManager) {

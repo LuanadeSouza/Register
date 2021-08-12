@@ -1,7 +1,7 @@
 package br.com.luanadev.register.registration
 
-import android.os.UserManager
 import br.com.luanadev.register.di.ActivityScope
+import br.com.luanadev.register.user.UserManager
 import javax.inject.Inject
 
 @ActivityScope

@@ -1,10 +1,9 @@
 package br.com.luanadev.register.di
 
 import android.content.Context
-import android.os.UserManager
 import br.com.luanadev.register.login.LoginComponent
-import br.com.luanadev.register.registration.RegistrationActivity
 import br.com.luanadev.register.registration.RegistrationComponent
+import br.com.luanadev.register.user.UserManager
 import dagger.BindsInstance
 import dagger.Component
 import javax.inject.Singleton
